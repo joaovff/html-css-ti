@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="public/favicons/apple-touch-icon.png?v=1768092257">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/favicons/favicon-32x32.png?v=1768092257">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/favicons/favicon-16x16.png?v=1768092257">
+    <link rel="manifest" href="public/favicons/site.webmanifest?v=1768092257">
+    <link rel="shortcut icon" href="public/favicons/favicon.ico?v=1768092257">
+
+    
+    
+    <title>Carrinho de Compras | AURUM Joalharia</title>
+    <meta name="description" content="Seu carrinho de compras AURUM">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+            <a href="index.html" class="logo">AURUM.</a>
+            <nav class="nav-menu">
+                <a href="aneis.html">Anéis</a>
+                <a href="colares.html">Colares</a>
+                <a href="pulseiras.html">Pulseiras</a>
+                <a href="brincos.html">Brincos</a>
+                <a href="relogios.html">Relógios</a>
+                <a href="conjuntos.html">Conjuntos</a>
+            </nav>
+            <div class="header-actions">
+                <a href="carrinho.html" class="icon-link" aria-label="Carrinho">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container checkout-grid" style="padding-top: 3rem;">
+            <div>
+                <h1 style="font-size: 1.8rem; margin-bottom: 2rem;">O Seu Carrinho (2)</h1>
+                
+                <div style="padding: 1.5rem; display: flex; gap: 1.5rem; border-bottom: 1px solid #EEE; align-items: center;">
+                    <img src="public/img/aneis/anelsingle.png" alt="Anel Solitário" style="width: 100px; height: 100px; object-fit: cover; border-radius: 4px;">
+                    <div style="flex: 1;">
+                        <h3 style="font-size: 1.1rem; margin-bottom: 0.3rem;">Solitário Clássico</h3>
+                        <p style="font-size: 0.9rem; color: #888; margin-bottom: 0.5rem;">Ouro Amarelo 18k, Tamanho 14</p>
+                        <p style="font-size: 0.9rem; color: #00B67A;">Em Stock</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <div style="font-weight: 700; font-size: 1.2rem;">1.250,00 €</div>
+                        <button style="background: none; border: none; text-decoration: underline; color: #999; font-size: 0.8rem; cursor: pointer; margin-top: 0.5rem;">Remover</button>
+                    </div>
+                </div>
+
+                <div style="padding: 1.5rem; display: flex; gap: 1.5rem; align-items: center;">
+                    <img src="public/img/colares/medallha.png" alt="Colar Medalha de São Bento" style="width: 100px; height: 100px; object-fit: cover; border-radius: 4px;">
+                    <div style="flex: 1;">
+                        <h3 style="font-size: 1.1rem; margin-bottom: 0.3rem;">Medalha de São Bento</h3>
+                        <p style="font-size: 0.9rem; color: #888; margin-bottom: 0.5rem;">Ouro Amarelo 1k</p>
+                        <p style="font-size: 0.9rem; color: #00B67A;">Em Stock</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <div style="font-weight: 700; font-size: 1.2rem;">350,00 €</div>
+                        <button style="background: none; border: none; text-decoration: underline; color: #999; font-size: 0.8rem; cursor: pointer; margin-top: 0.5rem;">Remover</button>
+                    </div>
+                </div>
+            </div>
+
+            <div style="position: sticky; top: 2rem; height: fit-content;">
+                <div class="checkout-card">
+                    <h3 class="checkout-section-title">Resumo</h3>
+                    <div class="co-math-row">
+                        <span>Subtotal</span>
+                        <span>1.600,00 €</span>
+                    </div>
+                    <div class="co-math-row">
+                        <span>Envio</span>
+                        <span>Grátis</span>
+                    </div>
+                    <div style="margin: 1.5rem 0; display: flex; gap: 0.5rem;">
+                        <input type="text" placeholder="Código Promocional" style="flex: 1; padding: 0.8rem; border: 1px solid #DDD; border-radius: 4px;">
+                        <button class="btn btn-primary" style="padding: 0 1.5rem;">Aplicar</button>
+                    </div>
+                    <div class="co-total-row">
+                        <span>Total</span>
+                        <span>1.968,00 €</span>
+                    </div>
+                    <div class="co-tax-note">Inclui IVA (23%)</div>
+                    <a href="checkout.html" class="btn btn-primary" style="display: block; width: 100%; text-align: center; margin-top: 1.5rem; padding: 1.2rem; text-decoration: none;">
+                        Finalizar Compra
+                    </a>
+                   <div style="margin-top: 1rem; display: flex; justify-content: center; gap: 0.5rem; color: #BBB;">
+                        <img src="public/img/src/cards.png" alt="AURUM Logo" style="width: 50%;" />
+                        <img src="public/img/src/mb.png" alt="AURUM Logo" style="width: 25px; margin-left: 10px" />
+                   </div>
+                </div>
+                <div class="trust-box">
+                    <div class="trust-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                    </div>
+                    <div class="trust-text">
+                        <h5>Compra 100% Segura</h5>
+                        <p>Os seus dados estão protegidos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>    </main>
+    <footer style="padding-bottom: 2rem;">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>AURUM.</h2>
+                    <p>Celebramos a beleza feminina através de design intemporal e artesanato de excelência.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="categorias.html">Categorias</a></li>
+                        <li><a href="faq.html">Sobre Nós</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Apoio ao Cliente</h4>
+                    <ul>
+                        <li><a href="faq.html">Perguntas Frequentes</a></li>
+                        <li><a href="envios.html">Envios e Devoluções</a></li>
+                        <li><a href="termos.html">Termos e Condições</a></li>
+                        <li><a href="privacidade.html">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form" action="#">
+                        <input type="email" placeholder="Email" class="newsletter-input" required>
+                        <button class="newsletter-btn">OK</button>
+                    </form>
+                </div>
+            </div>
+            <div style="border-top: 1px solid #E6D2BF; padding-top: 2rem; text-align: center; font-size: 0.8rem; opacity: 0.8;">
+                &copy; 2026 AURUM Joalharia. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

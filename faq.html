@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="public/favicons/apple-touch-icon.png?v=1768092257">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/favicons/favicon-32x32.png?v=1768092257">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/favicons/favicon-16x16.png?v=1768092257">
+    <link rel="manifest" href="public/favicons/site.webmanifest?v=1768092257">
+    <link rel="shortcut icon" href="public/favicons/favicon.ico?v=1768092257">
+
+    
+    
+    <title>Perguntas Frequentes (FAQ) | AURUM Joalharia</title>
+    <meta name="description"
+        content="Descubra a coleção exclusiva de joias AURUM. Anéis, colares e pulseiras com design premium e acabamento de excelência.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+            <a href="index.html" class="logo">AURUM.</a>
+            <nav class="nav-menu">
+                <a href="aneis.html">Anéis</a>
+                <a href="colares.html">Colares</a>
+                <a href="pulseiras.html">Pulseiras</a>
+                <a href="brincos.html">Brincos</a>
+                <a href="relogios.html">Relógios</a>
+                <a href="conjuntos.html">Conjuntos</a>
+            </nav>
+            <div class="header-actions">
+                <a href="carrinho.html" class="icon-link" aria-label="Carrinho">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section
+            style="background: linear-gradient(to bottom, #FCFBF9, #F5F1ED); padding: 5rem 0; border-bottom: 1px solid #E6D2BF;">
+            <div class="container" style="text-align: center;">
+                <h1
+                    style="font-family: 'Playfair Display', serif; font-size: 3.5rem; color: var(--color-gold-dark); margin-bottom: 1rem;">
+                    Como podemos ajudar?</h1>
+                <p style="color: var(--color-text-light); max-width: 600px; margin: 0 auto; font-size: 1.1rem;">Explore
+                    as nossas perguntas frequentes para esclarecer todas as suas dúvidas sobre peças, envios e
+                    processos.</p>
+            </div>
+        </section>
+
+        <section class="container" style="padding: 6rem 0; max-width: 800px;">
+            <style>
+                details {
+                    margin-bottom: 1.5rem;
+                    border-bottom: 1px solid #EEE;
+                    padding-bottom: 1rem;
+                    cursor: pointer;
+                }
+
+                summary {
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 700;
+                    font-size: 1.1rem;
+                    color: var(--color-gold-dark);
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                summary::-webkit-details-marker {
+                    display: none;
+                }
+
+                summary::after {
+                    content: '+';
+                    font-size: 1.5rem;
+                    transition: transform 0.3s;
+                }
+
+                details[open] summary::after {
+                    content: '-';
+                    transform: rotate(180deg);
+                }
+
+                .faq-answer {
+                    padding-top: 1rem;
+                    line-height: 1.7;
+                    color: var(--color-text-main);
+                }
+
+                .faq-cat-title {
+                    margin: 3rem 0 2rem;
+                    font-family: 'Playfair Display', serif;
+                    font-size: 1.8rem;
+                    border-left: 4px solid var(--color-gold);
+                    padding-left: 1rem;
+                    color: #333;
+                }
+            </style>
+
+            <h2 class="faq-cat-title">Encomendas e Pagamentos</h2>
+            <details>
+                <summary>Quais os métodos de pagamento aceites?</summary>
+                <div class="faq-answer">Aceitamos os métodos mais seguros para a sua comodidade: Cartão de Crédito
+                    (Visa, Mastercard), Referência Multibanco e MB WAY. Todos os dados são
+                    encriptados e processados de forma segura.</div>
+            </details>
+            <details>
+                <summary>Posso cancelar ou alterar a minha encomenda?</summary>
+                <div class="faq-answer">Se desejar cancelar ou alterar uma encomenda, deverá contactar o nosso apoio ao
+                    cliente no prazo máximo de 2 horas após a compra. Como trabalhamos com envios rápidos, após este
+                    período a encomenda poderá já ter sido processada para expedição.</div>
+            </details>
+            <details>
+                <summary>Como recebo a minha fatura?</summary>
+                <div class="faq-answer">A fatura é enviada automaticamente para o e-mail associado à conta assim que o
+                    pagamento for confirmado. Se necessitar de NIF na fatura, certifique-se de preencher esse campo no
+                    checkout.</div>
+            </details>
+
+            <h2 class="faq-cat-title">Produtos e Qualidade</h2>
+            <details>
+                <summary>De que materiais são feitas as joias AURUM?</summary>
+                <div class="faq-answer">A nossa qualidade é inegociável. Utilizamos exclusivamente Prata de Lei 925 com
+                    banho espesso de Ouro de 18k (Vermeil) ou Joalharia em Ouro Maciço de 19.2k. Todas as nossas pedras
+                    são naturais e selecionadas individualmente.</div>
+            </details>
+            <details>
+                <summary>As peças têm garantia?</summary>
+                <div class="faq-answer">Sim, todas as joias AURUM possuem vitalícia. A garantia não cobre danos
+                    resultantes de má utilização, exposição a produtos químicos fortes ou desgaste natural.</div>
+            </details>
+            <details>
+                <summary>Como devo cuidar das minhas peças?</summary>
+                <div class="faq-answer">Para manter o brilho original, recomendamos evitar o contacto com perfumes,
+                    cremes e cloro. Guarde as suas peças individualmente na bolsa AURUM original para evitar riscos.
+                    Para limpeza, use apenas um pano de microfibra macio e seco.</div>
+            </details>
+
+            <h2 class="faq-cat-title">Envios e Devoluções</h2>
+            <details>
+                <summary>Quanto tempo demora a entrega?</summary>
+                <div class="faq-answer">Para Portugal Continental, o prazo médio é de 1 a 3 dias úteis. Para as Ilhas e
+                    Europa, o prazo varia entre 4 a 7 dias úteis. Receberá um tracking number assim que a encomenda sair
+                    do nosso atelier.</div>
+            </details>
+            <details>
+                <summary>E se o tamanho do anel não estiver correto?</summary>
+                <div class="faq-answer">Não se preocupe! Oferecemos o primeiro ajuste de tamanho gratuito em anéis
+                    selecionados. Basta contactar-nos no prazo de 14 dias após a receção para coordenar o processo.
+                </div>
+            </details>
+
+            <div style="margin-top: 5rem; background: #FAF7F2; padding: 3rem; text-align: center; border-radius: 4px;">
+                <h3 style="margin-bottom: 1rem;">Ainda tem dúvidas?</h3>
+                <p style="margin-bottom: 2rem; color: #666;">A nossa equipa de especialistas está disponível para
+                    ajudar.</p>
+                <a href="contacto.html" class="btn btn-primary">Contactar Apoio ao Cliente</a>
+            </div>
+        </section>
+    </main>
+
+    <footer style="padding-bottom: 2rem;">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>AURUM.</h2>
+                    <p>Celebramos a beleza feminina através de design intemporal e artesanato de excelência.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="categorias.html">Categorias</a></li>
+                        <li><a href="faq.html">Sobre Nós</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Apoio ao Cliente</h4>
+                    <ul>
+                        <li><a href="faq.html">Perguntas Frequentes</a></li>
+                        <li><a href="envios.html">Envios e Devoluções</a></li>
+                        <li><a href="termos.html">Termos e Condições</a></li>
+                        <li><a href="privacidade.html">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form" action="#">
+                        <input type="email" placeholder="Email" class="newsletter-input" required>
+                        <button class="newsletter-btn">OK</button>
+                    </form>
+                </div>
+            </div>
+
+            <div
+                style="border-top: 1px solid #E6D2BF; padding-top: 2rem; text-align: center; font-size: 0.8rem; opacity: 0.8;">
+                &copy; 2026 AURUM Joalharia. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow checkout and cart to prevent duplicate content or indexing empty carts
+Disallow: /carrinho.html
+Disallow: /checkout.html
+
+# Sitemap Location
+Sitemap: https://www.aurum.pt/sitemap.xml
