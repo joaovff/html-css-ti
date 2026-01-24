@@ -1,259 +1,613 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
+  <!-- Página institucional: Envios e Devoluções (informação logística + política de devolução + FAQ). -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="public/favicons/apple-touch-icon.png?v=1768092257">
-    <link rel="icon" type="image/png" sizes="32x32" href="public/favicons/favicon-32x32.png?v=1768092257">
-    <link rel="icon" type="image/png" sizes="16x16" href="public/favicons/favicon-16x16.png?v=1768092257">
-    <link rel="manifest" href="public/favicons/site.webmanifest?v=1768092257">
-    <link rel="shortcut icon" href="public/favicons/favicon.ico?v=1768092257">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- UTF-8 garante suporte a caracteres especiais e acentos (pt-PT). -->
 
-    
-    
-    <title>Envios e Devoluções | AURUM Joalharia</title>
-    <meta name="description"
-        content="Descubra a coleção exclusiva de joias AURUM. Anéis, colares e pulseiras com design premium e acabamento de excelência.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Layout responsivo para mobile/tablet. -->
+
+    <!-- Favicons do site (compatibilidade com browsers e dispositivos móveis) -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="public/favicons/apple-touch-icon.png?v=1768092257"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="public/favicons/favicon-32x32.png?v=1768092257"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="public/favicons/favicon-16x16.png?v=1768092257"
+    />
+    <link rel="manifest" href="public/favicons/site.webmanifest?v=1768092257" />
+    <link rel="shortcut icon" href="public/favicons/favicon.ico?v=1768092257" />
 
-<body>
+    <title>Envios e Devoluções | AURUM Joalharia</title>
+    <!-- Title específico para SEO e contexto do separador do browser. -->
 
+    <meta
+      name="description"
+      content="Consulte prazos, custos de envio e política de devoluções AURUM. Entregas rápidas, embalagem premium e devoluções até 30 dias."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontes para reforçar identidade premium e consistência visual. -->
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- CSS global para layout e componentes reutilizáveis. -->
+  </head>
+
+  <body>
     <header>
-        <div class="container header-inner">
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
-            <a href="index.html" class="logo">AURUM.</a>
-            <nav class="nav-menu">
-                <a href="aneis.html">Anéis</a>
-                <a href="colares.html">Colares</a>
-                <a href="pulseiras.html">Pulseiras</a>
-                <a href="brincos.html">Brincos</a>
-                <a href="relogios.html">Relógios</a>
-                <a href="conjuntos.html">Conjuntos</a>
-            </nav>
-            <div class="header-actions">
-                <a href="carrinho.html" class="icon-link" aria-label="Carrinho">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="9" cy="21" r="1"></circle>
-                        <circle cx="20" cy="21" r="1"></circle>
-                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-                    </svg>
-                </a>
-            </div>
+      <!-- Header global reutilizado em todas as páginas -->
+      <div class="container header-inner">
+        <!-- Container controla largura e alinhamento do conteúdo -->
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <!-- Toggle do menu mobile (sem JS) -->
+
+        <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+        <!-- Botão do menu hambúrguer associado ao checkbox -->
+
+        <a href="index.html" class="logo">AURUM.</a>
+        <!-- Logótipo com link para a home -->
+
+        <nav class="nav-menu">
+          <!-- Links principais do site -->
+          <a href="aneis.html">Anéis</a>
+          <a href="colares.html">Colares</a>
+          <a href="pulseiras.html">Pulseiras</a>
+          <a href="brincos.html">Brincos</a>
+          <a href="relogios.html">Relógios</a>
+          <a href="conjuntos.html">Conjuntos</a>
+        </nav>
+
+        <div class="header-actions">
+          <!-- Ação rápida: acesso ao carrinho -->
+          <a href="carrinho.html" class="icon-link" aria-label="Carrinho">
+            <!-- aria-label melhora acessibilidade -->
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path
+                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+              ></path>
+            </svg>
+          </a>
         </div>
+      </div>
     </header>
 
-
     <main>
-        <section
-            style="background: linear-gradient(135deg, #FCFBF9 0%, #F5F1ED 100%); padding: 6rem 0; border-bottom: 1px solid #E6D2BF; position: relative; overflow: hidden;">
-            <div class="container" style="text-align: center; position: relative; z-index: 2;">
-                <h1
-                    style="font-family: 'Playfair Display', serif; font-size: 3.5rem; color: var(--color-gold-dark); margin-bottom: 1.5rem;">
-                    Logística & Satisfação</h1>
-                <p
-                    style="color: var(--color-text-light); max-width: 700px; margin: 0 auto; font-size: 1.2rem; line-height: 1.6;">
-                    Garantimos que cada peça AURUM chega às suas mãos com a mesma perfeição e cuidado com que foi criada
-                    no nosso atelier.</p>
-            </div>
-        </section>
+      <!-- Conteúdo principal: logística e devoluções -->
 
-        <section class="container" style="padding: 6rem 0;">
-            
+      <section
+        style="
+          background: linear-gradient(135deg, #fcfbf9 0%, #f5f1ed 100%);
+          padding: 6rem 0;
+          border-bottom: 1px solid #e6d2bf;
+          position: relative;
+          overflow: hidden;
+        "
+      >
+        <!-- Hero section: introdução visual com título e descrição -->
+
+        <div
+          class="container"
+          style="text-align: center; position: relative; z-index: 2"
+        >
+          <!-- z-index mantém o conteúdo acima de possíveis elementos decorativos -->
+
+          <h1
+            style="
+              font-family: 'Playfair Display', serif;
+              font-size: 3.5rem;
+              color: var(--color-gold-dark);
+              margin-bottom: 1.5rem;
+            "
+          >
+            Logística & Satisfação
+          </h1>
+          <!-- H1 da página: título principal -->
+
+          <p
+            style="
+              color: var(--color-text-light);
+              max-width: 700px;
+              margin: 0 auto;
+              font-size: 1.2rem;
+              line-height: 1.6;
+            "
+          >
+            Garantimos que cada peça AURUM chega às suas mãos com a mesma
+            perfeição e cuidado com que foi criada no nosso atelier.
+          </p>
+          <!-- Texto de confiança/brand messaging -->
+        </div>
+      </section>
+
+      <section class="container" style="padding: 6rem 0">
+        <!-- Secção principal com timeline/logística + blocos de expedição e devoluções -->
+
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            max-width: 800px;
+            margin: 0 auto 6rem;
+            position: relative;
+          "
+        >
+          <!-- Linha de progresso visual: representa etapas do processo (pedido → fabrico → envio → entrega) -->
+
+          <div
+            style="
+              position: absolute;
+              top: 20px;
+              left: 0;
+              right: 0;
+              height: 2px;
+              background: #e6d2bf;
+              z-index: 1;
+            "
+          ></div>
+          <!-- Linha horizontal no fundo (conecta os passos) -->
+
+          <div
+            style="
+              position: relative;
+              z-index: 2;
+              text-align: center;
+              width: 80px;
+            "
+          >
+            <!-- Passo 1: Pedido (concluído) -->
             <div
-                style="display: flex; justify-content: space-between; max-width: 800px; margin: 0 auto 6rem; position: relative;">
-                <div
-                    style="position: absolute; top: 20px; left: 0; right: 0; height: 2px; background: #E6D2BF; z-index: 1;">
-                </div>
-                <div style="position: relative; z-index: 2; text-align: center; width: 80px;">
-                    <div
-                        style="width: 40px; height: 40px; background: var(--color-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white;">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M20 6L9 17l-5-5" />
-                        </svg>
-                    </div>
-                    <span style="font-size: 0.8rem; font-weight: 700;">Pedido</span>
-                </div>
-                <div style="position: relative; z-index: 2; text-align: center; width: 80px;">
-                    <div
-                        style="width: 40px; height: 40px; background: var(--color-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white;">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <circle cx="12" cy="12" r="10" />
-                            <path d="M12 6v6l4 2" />
-                        </svg>
-                    </div>
-                    <span style="font-size: 0.8rem; font-weight: 700;">Fabrico</span>
-                </div>
-                <div style="position: relative; z-index: 2; text-align: center; width: 80px;">
-                    <div
-                        style="width: 40px; height: 40px; background: #E6D2BF; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white;">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <rect x="1" y="3" width="15" height="13" />
-                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
-                        </svg>
-                    </div>
-                    <span style="font-size: 0.8rem; font-weight: 700; color: #888;">Envio</span>
-                </div>
-                <div style="position: relative; z-index: 2; text-align: center; width: 80px;">
-                    <div
-                        style="width: 40px; height: 40px; background: #E6D2BF; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white;">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                            <polyline points="9 22 9 12 15 12 15 22" />
-                        </svg>
-                    </div>
-                    <span style="font-size: 0.8rem; font-weight: 700; color: #888;">Entrega</span>
-                </div>
+              style="
+                width: 40px;
+                height: 40px;
+                background: var(--color-gold);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1rem;
+                color: white;
+              "
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+            </div>
+            <span style="font-size: 0.8rem; font-weight: 700">Pedido</span>
+          </div>
+
+          <div
+            style="
+              position: relative;
+              z-index: 2;
+              text-align: center;
+              width: 80px;
+            "
+          >
+            <!-- Passo 2: Fabrico (concluído/em progresso) -->
+            <div
+              style="
+                width: 40px;
+                height: 40px;
+                background: var(--color-gold);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1rem;
+                color: white;
+              "
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+            </div>
+            <span style="font-size: 0.8rem; font-weight: 700">Fabrico</span>
+          </div>
+
+          <div
+            style="
+              position: relative;
+              z-index: 2;
+              text-align: center;
+              width: 80px;
+            "
+          >
+            <!-- Passo 3: Envio (ainda não concluído: cor mais clara) -->
+            <div
+              style="
+                width: 40px;
+                height: 40px;
+                background: #e6d2bf;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1rem;
+                color: white;
+              "
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="1" y="3" width="15" height="13" />
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+              </svg>
+            </div>
+            <span style="font-size: 0.8rem; font-weight: 700; color: #888"
+              >Envio</span
+            >
+          </div>
+
+          <div
+            style="
+              position: relative;
+              z-index: 2;
+              text-align: center;
+              width: 80px;
+            "
+          >
+            <!-- Passo 4: Entrega (ainda não concluído) -->
+            <div
+              style="
+                width: 40px;
+                height: 40px;
+                background: #e6d2bf;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1rem;
+                color: white;
+              "
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+            </div>
+            <span style="font-size: 0.8rem; font-weight: 700; color: #888"
+              >Entrega</span
+            >
+          </div>
+        </div>
+
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 5rem;
+          "
+        >
+          <!-- Layout em 2 colunas responsivo:
+                     esquerda = expedição
+                     direita = trocas e devoluções -->
+
+          <div>
+            <!-- Bloco: informação de expedição -->
+            <h2
+              style="
+                font-family: 'Playfair Display', serif;
+                color: var(--color-gold-dark);
+                margin-bottom: 2rem;
+                border-bottom: 2px solid #f0e6d8;
+                padding-bottom: 1rem;
+              "
+            >
+              Expedição Global
+            </h2>
+
+            <div style="margin-bottom: 2.5rem">
+              <!-- Expedição em Portugal (continental + ilhas) -->
+              <h4 style="color: #333; margin-bottom: 0.8rem">
+                Portugal Continental & Ilhas
+              </h4>
+              <p style="line-height: 1.7; color: #666">
+                Utilizamos os serviços expresso da DHL e CTT Correios de
+                Portugal. As encomendas para o continente chegam tipicamente em
+                24h-48h úteis após expedição.
+              </p>
+
+              <ul
+                style="
+                  margin-top: 1rem;
+                  color: #666;
+                  font-size: 0.95rem;
+                  margin-left: 25px;
+                "
+              >
+                <!-- Lista de custos por região -->
+                <li><strong>Continental:</strong> 4,90€ (Grátis > 150€)</li>
+                <li><strong>Ilhas:</strong> 7,50€ (Grátis > 250€)</li>
+              </ul>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 5rem;">
-                <div>
-                    <h2
-                        style="font-family: 'Playfair Display', serif; color: var(--color-gold-dark); margin-bottom: 2rem; border-bottom: 2px solid #F0E6D8; padding-bottom: 1rem;">
-                        Expedição Global</h2>
-                    <div style="margin-bottom: 2.5rem;">
-                        <h4 style="color: #333; margin-bottom: 0.8rem;">Portugal Continental & Ilhas</h4>
-                        <p style="line-height: 1.7; color: #666;">Utilizamos os serviços expresso da DHL e CTT Correios
-                            de Portugal. As encomendas para o continente chegam tipicamente em 24h-48h úteis após
-                            expedição.</p>
-                        <ul style="margin-top: 1rem; color: #666; font-size: 0.95rem;margin-left: 25px;">
-                            <li><strong>Continental:</strong> 4,90€ (Grátis > 150€)</li>
-                            <li><strong>Ilhas:</strong> 7,50€ (Grátis > 250€)</li>
-                        </ul>
-                    </div>
-                    <div style="margin-bottom: 2.5rem;">
-                        <h4 style="color: #333; margin-bottom: 0.8rem;">União Europeia e Resto do Mundo</h4>
-                        <p style="line-height: 1.7; color: #666;">Enviamos para mais de 50 países. Os custos são
-                            calculados automaticamente no checkout com base no destino e peso.</p>
-                    </div>
-                    <div style="background: #FAF7F2; padding: 2rem; border-radius: 2px;">
-                        <h4 style="margin-bottom: 1rem;">Embalagem Premium</h4>
-                        <p style="font-size: 0.9rem; line-height: 1.6; color: #777;">Todas as encomendas incluem a nossa
-                            caixa premium, bolsa de veludo para transporte e certificado de autenticidade, protegidas
-                            por uma embalagem exterior discreta e ecológica.</p>
-                    </div>
-                </div>
-
-                <div>
-                    <h2
-                        style="font-family: 'Playfair Display', serif; color: var(--color-gold-dark); margin-bottom: 2rem; border-bottom: 2px solid #F0E6D8; padding-bottom: 1rem;">
-                        Trocas & Devoluções</h2>
-                    <p style="line-height: 1.8; color: #666; margin-bottom: 2rem;">A nossa política de 14 dias
-                        permite-lhe comprar com total confiança. Se a peça não for exatamente o que sonhou, o processo
-                        de devolução é simples.</p>
-
-                    <div style="display: grid; gap: 1.5rem;">
-                        <div style="border: 1px solid #EEE; padding: 1.5rem; transition: border-color 0.3s;"
-                            onmouseover="this.style.borderColor='#C2956E'" onmouseout="this.style.borderColor='#EEE'">
-                            <h4 style="margin-bottom: 0.5rem; color: var(--color-gold-dark);">Passo 1: Notificação</h4>
-                            <p style="font-size: 0.9rem; color: #888;">Entre em contacto através de pos-venda@aurum.pt
-                                num
-                                prazo de 14 dias.</p>
-                        </div>
-                        <div style="border: 1px solid #EEE; padding: 1.5rem; transition: border-color 0.3s;"
-                            onmouseover="this.style.borderColor='#C2956E'" onmouseout="this.style.borderColor='#EEE'">
-                            <h4 style="margin-bottom: 0.5rem; color: var(--color-gold-dark);">Passo 2: Envio</h4>
-                            <p style="font-size: 0.9rem; color: #888;">A peça deve ser enviada na embalagem original,
-                                sem sinais de uso, para a morada da nossa loja em Lisboa.</p>
-                        </div>
-                        <div style="border: 1px solid #EEE; padding: 1.5rem; transition: border-color 0.3s;"
-                            onmouseover="this.style.borderColor='#C2956E'" onmouseout="this.style.borderColor='#EEE'">
-                            <h4 style="margin-bottom: 0.5rem; color: var(--color-gold-dark);">Passo 3: Reembolso</h4>
-                            <p style="font-size: 0.9rem; color: #888;">Após recepção e controlo de qualidade, o valor é
-                                devolvido via método original de pagamento em 5 dias úteis.</p>
-                        </div>
-                    </div>
-
-                    <div style="margin-top: 3rem; text-align: center;">
-                        <p style="font-size: 0.9rem; font-style: italic; color: #999;">*Peças personalizadas ou
-                            personalizadas com gravações não podem ser devolvidas.</p>
-                    </div>
-                </div>
+            <div style="margin-bottom: 2.5rem">
+              <!-- Expedição internacional -->
+              <h4 style="color: #333; margin-bottom: 0.8rem">
+                União Europeia e Resto do Mundo
+              </h4>
+              <p style="line-height: 1.7; color: #666">
+                Enviamos para mais de 50 países. Os custos são calculados
+                automaticamente no checkout com base no destino e peso.
+              </p>
             </div>
 
-            
-            <div style="margin-top: 8rem; background: var(--color-bg-light); padding: 5rem 0;">
-                <div class="container" style="max-width: 800px;">
-                    <h3
-                        style="text-align: center; margin-bottom: 3rem; font-family: 'Playfair Display', serif; font-size: 2rem;">
-                        Perguntas de Logística</h3>
-                    <div style="display: grid; gap: 2rem;">
-                        <div>
-                            <h5 style="margin-bottom: 0.5rem; font-weight: 700;">Como posso seguir a minha encomenda?
-                            </h5>
-                            <p style="color: #666; font-size: 0.95rem;">Receberá um SMS e um e-mail com o link de
-                                tracking directo assim que o objecto for recolhido pelo estafeta na nossa loja.</p>
-                        </div>
-                        <div>
-                            <h5 style="margin-bottom: 0.5rem; font-weight: 700;">Fazem entregas aos fins-de-semana?</h5>
-                            <p style="color: #666; font-size: 0.95rem;">As entregas standard são feitas em dias úteis.
-                                No entanto, para Lisboa, temos disponível o serviço "Same Day" que pode incluir sábados
-                                sob consulta especial.</p>
-                        </div>
-                        <div>
-                            <h5 style="margin-bottom: 0.5rem; font-weight: 700;">A encomenda é segura?</h5>
-                            <p style="color: #666; font-size: 0.95rem;">Sim, todos os nossos envios são segurados contra
-                                perda ou extravio. No caso improvável de um problema, a AURUM assume total
-                                responsabilidade por um novo envio.</p>
-                        </div>
-                    </div>
-                </div>
+            <div style="background: #faf7f2; padding: 2rem; border-radius: 2px">
+              <!-- Bloco informativo: embalagem e valor acrescentado -->
+              <h4 style="margin-bottom: 1rem">Embalagem Premium</h4>
+              <p style="font-size: 0.9rem; line-height: 1.6; color: #777">
+                Todas as encomendas incluem a nossa caixa premium, bolsa de
+                veludo para transporte e certificado de autenticidade,
+                protegidas por uma embalagem exterior discreta e ecológica.
+              </p>
             </div>
-        </section>
+          </div>
+
+          <div>
+            <!-- Bloco: política de trocas e devoluções -->
+            <h2
+              style="
+                font-family: 'Playfair Display', serif;
+                color: var(--color-gold-dark);
+                margin-bottom: 2rem;
+                border-bottom: 2px solid #f0e6d8;
+                padding-bottom: 1rem;
+              "
+            >
+              Trocas & Devoluções
+            </h2>
+
+            <p style="line-height: 1.8; color: #666; margin-bottom: 2rem">
+              A nossa política de 30 dias permite-lhe comprar com total
+              confiança. Se a peça não for exatamente o que sonhou, o processo
+              de devolução é simples.
+            </p>
+
+            <div style="display: grid; gap: 1.5rem">
+              <!-- Cards explicativos com passos do processo -->
+
+              <div
+                style="
+                  border: 1px solid #eee;
+                  padding: 1.5rem;
+                  transition: border-color 0.3s;
+                "
+                onmouseover="this.style.borderColor='#C2956E'"
+                onmouseout="this.style.borderColor='#EEE'"
+              >
+                <!-- Efeito hover simples com JS inline para reforçar interação -->
+                <h4
+                  style="margin-bottom: 0.5rem; color: var(--color-gold-dark)"
+                >
+                  Passo 1: Notificação
+                </h4>
+                <p style="font-size: 0.9rem; color: #888">
+                  Entre em contacto através de pos-venda@aurum.pt num prazo de
+                  30 dias.
+                </p>
+              </div>
+
+              <div
+                style="
+                  border: 1px solid #eee;
+                  padding: 1.5rem;
+                  transition: border-color 0.3s;
+                "
+                onmouseover="this.style.borderColor='#C2956E'"
+                onmouseout="this.style.borderColor='#EEE'"
+              >
+                <h4
+                  style="margin-bottom: 0.5rem; color: var(--color-gold-dark)"
+                >
+                  Passo 2: Envio
+                </h4>
+                <p style="font-size: 0.9rem; color: #888">
+                  A peça deve ser enviada na embalagem original, sem sinais de
+                  uso, para a morada da nossa loja em Lisboa.
+                </p>
+              </div>
+
+              <div
+                style="
+                  border: 1px solid #eee;
+                  padding: 1.5rem;
+                  transition: border-color 0.3s;
+                "
+                onmouseover="this.style.borderColor='#C2956E'"
+                onmouseout="this.style.borderColor='#EEE'"
+              >
+                <h4
+                  style="margin-bottom: 0.5rem; color: var(--color-gold-dark)"
+                >
+                  Passo 3: Reembolso
+                </h4>
+                <p style="font-size: 0.9rem; color: #888">
+                  Após recepção e controlo de qualidade, o valor é devolvido via
+                  método original de pagamento em 5 dias úteis.
+                </p>
+              </div>
+            </div>
+
+            <div style="margin-top: 3rem; text-align: center">
+              <!-- Nota legal/importante sobre exclusões de devolução -->
+              <p style="font-size: 0.9rem; font-style: italic; color: #999">
+                *Peças personalizadas ou personalizadas com gravações não podem
+                ser devolvidas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="
+            margin-top: 8rem;
+            background: var(--color-bg-light);
+            padding: 5rem 0;
+          "
+        >
+          <!-- Secção extra tipo FAQ para dúvidas rápidas de logística -->
+
+          <div class="container" style="max-width: 800px">
+            <!-- Conteúdo com largura controlada para facilitar leitura -->
+            <h3
+              style="
+                text-align: center;
+                margin-bottom: 3rem;
+                font-family: 'Playfair Display', serif;
+                font-size: 2rem;
+              "
+            >
+              Perguntas de Logística
+            </h3>
+
+            <div style="display: grid; gap: 2rem">
+              <!-- Blocos de pergunta/resposta -->
+
+              <div>
+                <h5 style="margin-bottom: 0.5rem; font-weight: 700">
+                  Como posso seguir a minha encomenda?
+                </h5>
+                <p style="color: #666; font-size: 0.95rem">
+                  Receberá um SMS e um e-mail com o link de tracking directo
+                  assim que o objeto for recolhido pelo estafeta na nossa loja.
+                </p>
+              </div>
+
+              <div>
+                <h5 style="margin-bottom: 0.5rem; font-weight: 700">
+                  Fazem entregas aos fins-de-semana?
+                </h5>
+                <p style="color: #666; font-size: 0.95rem">
+                  As entregas standard são feitas em dias úteis. No entanto,
+                  para Lisboa, temos disponível o serviço "Same Day" que pode
+                  incluir sábados sob consulta especial.
+                </p>
+              </div>
+
+              <div>
+                <h5 style="margin-bottom: 0.5rem; font-weight: 700">
+                  A encomenda é segura?
+                </h5>
+                <p style="color: #666; font-size: 0.95rem">
+                  Sim, todos os nossos envios são segurados contra perda ou
+                  extravio. No caso improvável de um problema, a AURUM assume
+                  total responsabilidade por um novo envio.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer style="padding-bottom: 2rem;">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <h2>AURUM.</h2>
-                    <p>Celebramos a beleza feminina através de design intemporal e artesanato de excelência.</p>
-                </div>
+    <footer style="padding-bottom: 2rem">
+      <!-- Footer institucional com navegação e links de suporte -->
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <h2>AURUM.</h2>
+            <p>
+              Celebramos a beleza feminina através de design intemporal e
+              artesanato de excelência.
+            </p>
+          </div>
 
-                <div class="footer-col">
-                    <h4>Navegação</h4>
-                    <ul>
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="categorias.html">Categorias</a></li>
-                        <li><a href="faq.html">Sobre Nós</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
+          <div class="footer-col">
+            <h4>Navegação</h4>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="categorias.html">Categorias</a></li>
+              <li><a href="faq.html">Sobre Nós</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
 
-                <div class="footer-col">
-                    <h4>Apoio ao Cliente</h4>
-                    <ul>
-                        <li><a href="faq.html">Perguntas Frequentes</a></li>
-                        <li><a href="envios.html">Envios e Devoluções</a></li>
-                        <li><a href="termos.html">Termos e Condições</a></li>
-                        <li><a href="privacidade.html">Política de Privacidade</a></li>
-                    </ul>
-                </div>
+          <div class="footer-col">
+            <h4>Apoio ao Cliente</h4>
+            <ul>
+              <li><a href="faq.html">Perguntas Frequentes</a></li>
+              <li><a href="envios.html">Envios e Devoluções</a></li>
+              <li><a href="termos.html">Termos e Condições</a></li>
+              <li><a href="privacidade.html">Política de Privacidade</a></li>
+            </ul>
+          </div>
 
-                <div class="footer-col">
-                    <h4>Newsletter</h4>
-                    <form class="newsletter-form" action="#">
-                        <input type="email" placeholder="Email" class="newsletter-input" required>
-                        <button class="newsletter-btn">OK</button>
-                    </form>
-                </div>
-            </div>
-
-            <div
-                style="border-top: 1px solid #E6D2BF; padding-top: 2rem; text-align: center; font-size: 0.8rem; opacity: 0.8;">
-                &copy; 2026 AURUM Joalharia. Todos os direitos reservados.
-            </div>
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <form class="newsletter-form" action="#">
+              <!-- action="#" porque é um protótipo sem submissão real -->
+              <input
+                type="email"
+                placeholder="Email"
+                class="newsletter-input"
+                required
+              />
+              <button class="newsletter-btn">OK</button>
+            </form>
+          </div>
         </div>
-    </footer>
-</body>
 
+        <div
+          style="
+            border-top: 1px solid #e6d2bf;
+            padding-top: 2rem;
+            text-align: center;
+            font-size: 0.8rem;
+            opacity: 0.8;
+          "
+        >
+          &copy; 2026 AURUM Joalharia. Todos os direitos reservados.
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,218 +1,389 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
+  <!-- Página de categoria (Colares) para navegação e listagem de produtos. -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="public/favicons/apple-touch-icon.png?v=1768092257">
-    <link rel="icon" type="image/png" sizes="32x32" href="public/favicons/favicon-32x32.png?v=1768092257">
-    <link rel="icon" type="image/png" sizes="16x16" href="public/favicons/favicon-16x16.png?v=1768092257">
-    <link rel="manifest" href="public/favicons/site.webmanifest?v=1768092257">
-    <link rel="shortcut icon" href="public/favicons/favicon.ico?v=1768092257">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- UTF-8 permite acentos e caracteres especiais (pt-PT). -->
 
-    
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Responsividade: adapta o layout ao ecrã do dispositivo. -->
+
+    <!-- Favicons para browsers e dispositivos móveis -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="public/favicons/apple-touch-icon.png?v=1768092257"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="public/favicons/favicon-32x32.png?v=1768092257"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="public/favicons/favicon-16x16.png?v=1768092257"
+    />
+    <link rel="manifest" href="public/favicons/site.webmanifest?v=1768092257" />
+    <link rel="shortcut icon" href="public/favicons/favicon.ico?v=1768092257" />
+
     <title>Colares | AURUM Joalharia</title>
-    <meta name="description" content="Explore a nossa coleção de Colares. Design exclusivo e materiais nobres.">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <!-- Title da página: importante para SEO e contexto no separador do browser. -->
 
-<body>
+    <meta
+      name="description"
+      content="Explore a nossa coleção de Colares. Design exclusivo e materiais nobres."
+    />
+    <!-- Meta description orientada a categoria para melhorar relevância em motores de pesquisa. -->
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontes usadas na identidade visual da marca (premium e consistente). -->
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Folha de estilos global (componentes, grelhas, botões, tipografia, etc.). -->
+  </head>
+
+  <body>
     <header>
-        <div class="container header-inner">
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
-            <a href="index.html" class="logo">AURUM.</a>
-            <nav class="nav-menu">
-                <a href="aneis.html">Anéis</a>
-                <a href="colares.html">Colares</a>
-                <a href="pulseiras.html">Pulseiras</a>
-                <a href="brincos.html">Brincos</a>
-                <a href="relogios.html">Relógios</a>
-                <a href="conjuntos.html">Conjuntos</a>
-            </nav>
-            <div class="header-actions">
-                <a href="carrinho.html" class="icon-link" aria-label="Carrinho">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="9" cy="21" r="1"></circle>
-                        <circle cx="20" cy="21" r="1"></circle>
-                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-                    </svg>
-                </a>
-            </div>
+      <!-- Header global reutilizado em todo o site -->
+      <div class="container header-inner">
+        <!-- Container controla largura e alinhamento do conteúdo -->
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <!-- Checkbox usado para abrir/fechar menu em mobile via CSS -->
+
+        <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+        <!-- Botão do menu (hambúrguer) associado ao checkbox -->
+
+        <a href="index.html" class="logo">AURUM.</a>
+        <!-- Logótipo clicável para voltar à página inicial -->
+
+        <nav class="nav-menu">
+          <!-- Navegação principal por categorias -->
+          <a href="aneis.html">Anéis</a>
+          <a href="colares.html">Colares</a>
+          <a href="pulseiras.html">Pulseiras</a>
+          <a href="brincos.html">Brincos</a>
+          <a href="relogios.html">Relógios</a>
+          <a href="conjuntos.html">Conjuntos</a>
+        </nav>
+
+        <div class="header-actions">
+          <!-- Ações rápidas no header (ex: carrinho) -->
+          <a href="carrinho.html" class="icon-link" aria-label="Carrinho">
+            <!-- aria-label garante acessibilidade do ícone -->
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path
+                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+              ></path>
+            </svg>
+          </a>
         </div>
+      </div>
     </header>
 
     <main>
-        <div class="page-header">
-            <div class="container">
-                <h1>Colares</h1>
-                <p>Elegância intemporal para todas as ocasiões.</p>
-            </div>
-        </div>
+      <!-- Conteúdo principal da página de categoria -->
 
-        <div class="container category-layout">
-            <aside class="filters">
-                <div class="filter-group">
-                    <h4>Material</h4>
-                    <label class="filter-option"><input type="checkbox" class="filter-checkbox"> Ouro Amarelo</label>
-                    <label class="filter-option"><input type="checkbox" class="filter-checkbox"> Ouro Branco</label>
-                    <label class="filter-option"><input type="checkbox" class="filter-checkbox"> Ouro Rosa</label>
-                    <label class="filter-option"><input type="checkbox" class="filter-checkbox"> Platina</label>
-                </div>
-                <div class="filter-group">
-                    <h4>Pedra</h4>
-                    <label class="filter-option"><input type="checkbox" class="filter-checkbox"> Diamante</label>
-                    <label class="filter-option"><input type="checkbox" class="filter-checkbox"> Safira</label>
-                    <label class="filter-option"><input type="checkbox" class="filter-checkbox"> Esmeralda</label>
-                    <label class="filter-option"><input type="checkbox" class="filter-checkbox"> Rubi</label>
-                </div>
-                <div class="filter-group">
-                    <h4>Preço</h4>
-                    <input type="range" class="price-range" min="0" max="5000">
-                    <div style="font-size: 0.9rem; margin-top: 0.5rem;">Até 5.000 €</div>
-                </div>
-            </aside>
-
-            <div>
-                <section class="products-grid">
-                    <article class="product-card">
-                        <a href="#" class="product-link">
-                            <div class="product-img-wrap">
-                                <img src="public/img/colares/fiopt.png" alt="Colar Medalha Ouro">
-                            </div>
-                            <div class="product-details">
-                                <h3 class="p-name">Colar Medalha Ouro</h3>
-                                <div class="p-price">420,00 €</div>
-                            </div>
-                        </a>
-                        <div style="padding: 0 1.5rem 1.5rem;">
-                            <button class="btn btn-primary" style="margin-top: 0.5rem; width: 100%;">Adicionar</button>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <a href="#" class="product-link">
-                            <div class="product-img-wrap">
-                                <img src="public/img/colares/colarcoracao.png" alt="Colar Coração Delicado">
-                            </div>
-                            <div class="product-details">
-                                <h3 class="p-name">Colar Coração Delicado</h3>
-                                <div class="p-price">380,00 €</div>
-                            </div>
-                        </a>
-                        <div style="padding: 0 1.5rem 1.5rem;">
-                            <button class="btn btn-primary" style="margin-top: 0.5rem; width: 100%;">Adicionar</button>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <a href="#" class="product-link">
-                            <div class="product-img-wrap">
-                                <img src="public/img/colares/colardiamentebrilhante.png" alt="Colar Elo Brilhante">
-                            </div>
-                            <div class="product-details">
-                                <h3 class="p-name">Colar Elo Brilhante</h3>
-                                <div class="p-price">950,00 €</div>
-                            </div>
-                        </a>
-                        <div style="padding: 0 1.5rem 1.5rem;">
-                            <button class="btn btn-primary" style="margin-top: 0.5rem; width: 100%;">Adicionar</button>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <a href="#" class="product-link">
-                            <div class="product-img-wrap">
-                                <img src="public/img/colares/colartrevo.png" alt="Colar Trevo da Sorte">
-                            </div>
-                            <div class="product-details">
-                                <h3 class="p-name">Colar Trevo da Sorte</h3>
-                                <div class="p-price">290,00 €</div>
-                            </div>
-                        </a>
-                        <div style="padding: 0 1.5rem 1.5rem;">
-                            <button class="btn btn-primary" style="margin-top: 0.5rem; width: 100%;">Adicionar</button>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <a href="#" class="product-link">
-                            <div class="product-img-wrap">
-                                <img src="public/img/colares/colarema.png" alt="Colar Inicial">
-                            </div>
-                            <div class="product-details">
-                                <h3 class="p-name">Colar Inicial</h3>
-                                <div class="p-price">250,00 €</div>
-                            </div>
-                        </a>
-                        <div style="padding: 0 1.5rem 1.5rem;">
-                            <button class="btn btn-primary" style="margin-top: 0.5rem; width: 100%;">Adicionar</button>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <a href="#" class="product-link">
-                            <div class="product-img-wrap">
-                                <img src="public/img/colares/perol.png" alt="Colar Pérola Clássica">
-                            </div>
-                            <div class="product-details">
-                                <h3 class="p-name">Colar Pérola Clássica</h3>
-                                <div class="p-price">320,00 €</div>
-                            </div>
-                        </a>
-                        <div style="padding: 0 1.5rem 1.5rem;">
-                            <button class="btn btn-primary" style="margin-top: 0.5rem; width: 100%;">Adicionar</button>
-                        </div>
-                    </article>
-                </section>
-                
-                <div class="seo-content">
-                    <h2>Coleção Exclusiva de Colares</h2>
-                    <p>Descubra a nossa seleção de Colares, criadas com os materiais mais nobres e um design inigualável. Cada peça conta uma história de sofisticação e beleza.</p>
-                </div>
-            </div>
+      <div class="page-header">
+        <!-- Cabeçalho visual com título e mensagem da categoria -->
+        <div class="container">
+          <h1>Colares</h1>
+          <!-- H1 único da página (boa prática de SEO/semântica) -->
+          <p>Elegância intemporal para todas as ocasiões.</p>
         </div>
+      </div>
+
+      <div class="container category-layout">
+        <!-- Layout em duas zonas:
+                 - filtros (aside) à esquerda
+                 - listagem de produtos à direita -->
+
+        <aside class="filters">
+          <!-- Filtros em zona lateral para navegação e refinamento de pesquisa -->
+
+          <div class="filter-group">
+            <!-- Filtro por material -->
+            <h4>Material</h4>
+            <label class="filter-option"
+              ><input type="checkbox" class="filter-checkbox" /> Ouro
+              Amarelo</label
+            >
+            <label class="filter-option"
+              ><input type="checkbox" class="filter-checkbox" /> Ouro
+              Branco</label
+            >
+            <label class="filter-option"
+              ><input type="checkbox" class="filter-checkbox" /> Ouro
+              Rosa</label
+            >
+            <label class="filter-option"
+              ><input type="checkbox" class="filter-checkbox" /> Platina</label
+            >
+          </div>
+
+          <div class="filter-group">
+            <!-- Filtro por tipo de pedra -->
+            <h4>Pedra</h4>
+            <label class="filter-option"
+              ><input type="checkbox" class="filter-checkbox" /> Diamante</label
+            >
+            <label class="filter-option"
+              ><input type="checkbox" class="filter-checkbox" /> Safira</label
+            >
+            <label class="filter-option"
+              ><input type="checkbox" class="filter-checkbox" />
+              Esmeralda</label
+            >
+            <label class="filter-option"
+              ><input type="checkbox" class="filter-checkbox" /> Rubi</label
+            >
+          </div>
+
+          <div class="filter-group">
+            <!-- Filtro por preço (slider) -->
+            <h4>Preço</h4>
+            <input type="range" class="price-range" min="0" max="5000" />
+            <div style="font-size: 0.9rem; margin-top: 0.5rem">Até 5.000 €</div>
+          </div>
+        </aside>
+
+        <div>
+          <!-- Zona principal com grelha de produtos -->
+
+          <section class="products-grid">
+            <!-- Grelha de cards de produto, com layout consistente em toda a loja -->
+
+            <article class="product-card">
+              <!-- Card individual de produto -->
+              <a href="#" class="product-link">
+                <!-- Link envolve imagem + detalhes para facilitar clique -->
+                <div class="product-img-wrap">
+                  <img
+                    src="public/img/colares/fiopt.png"
+                    alt="Colar Medalha Ouro"
+                  />
+                </div>
+
+                <div class="product-details">
+                  <h3 class="p-name">Colar Medalha Ouro</h3>
+                  <div class="p-price">420,00 €</div>
+                </div>
+              </a>
+
+              <div style="padding: 0 1.5rem 1.5rem">
+                <!-- Botão de ação directo (adição ao carrinho) -->
+                <button
+                  class="btn btn-primary"
+                  style="margin-top: 0.5rem; width: 100%"
+                >
+                  Adicionar
+                </button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <a href="#" class="product-link">
+                <div class="product-img-wrap">
+                  <img
+                    src="public/img/colares/colarcoracao.png"
+                    alt="Colar Coração Delicado"
+                  />
+                </div>
+                <div class="product-details">
+                  <h3 class="p-name">Colar Coração Delicado</h3>
+                  <div class="p-price">380,00 €</div>
+                </div>
+              </a>
+              <div style="padding: 0 1.5rem 1.5rem">
+                <button
+                  class="btn btn-primary"
+                  style="margin-top: 0.5rem; width: 100%"
+                >
+                  Adicionar
+                </button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <a href="#" class="product-link">
+                <div class="product-img-wrap">
+                  <img
+                    src="public/img/colares/colardiamentebrilhante.png"
+                    alt="Colar Elo Brilhante"
+                  />
+                </div>
+                <div class="product-details">
+                  <h3 class="p-name">Colar Elo Brilhante</h3>
+                  <div class="p-price">950,00 €</div>
+                </div>
+              </a>
+              <div style="padding: 0 1.5rem 1.5rem">
+                <button
+                  class="btn btn-primary"
+                  style="margin-top: 0.5rem; width: 100%"
+                >
+                  Adicionar
+                </button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <a href="#" class="product-link">
+                <div class="product-img-wrap">
+                  <img
+                    src="public/img/colares/colartrevo.png"
+                    alt="Colar Trevo da Sorte"
+                  />
+                </div>
+                <div class="product-details">
+                  <h3 class="p-name">Colar Trevo da Sorte</h3>
+                  <div class="p-price">290,00 €</div>
+                </div>
+              </a>
+              <div style="padding: 0 1.5rem 1.5rem">
+                <button
+                  class="btn btn-primary"
+                  style="margin-top: 0.5rem; width: 100%"
+                >
+                  Adicionar
+                </button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <a href="#" class="product-link">
+                <div class="product-img-wrap">
+                  <img
+                    src="public/img/colares/colarema.png"
+                    alt="Colar Inicial"
+                  />
+                </div>
+                <div class="product-details">
+                  <h3 class="p-name">Colar Inicial</h3>
+                  <div class="p-price">250,00 €</div>
+                </div>
+              </a>
+              <div style="padding: 0 1.5rem 1.5rem">
+                <button
+                  class="btn btn-primary"
+                  style="margin-top: 0.5rem; width: 100%"
+                >
+                  Adicionar
+                </button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <a href="#" class="product-link">
+                <div class="product-img-wrap">
+                  <img
+                    src="public/img/colares/perol.png"
+                    alt="Colar Pérola Clássica"
+                  />
+                </div>
+                <div class="product-details">
+                  <h3 class="p-name">Colar Pérola Clássica</h3>
+                  <div class="p-price">320,00 €</div>
+                </div>
+              </a>
+              <div style="padding: 0 1.5rem 1.5rem">
+                <button
+                  class="btn btn-primary"
+                  style="margin-top: 0.5rem; width: 100%"
+                >
+                  Adicionar
+                </button>
+              </div>
+            </article>
+          </section>
+
+          <div class="seo-content">
+            <!-- Conteúdo SEO no fundo da página para enriquecer texto e palavras-chave -->
+            <h2>Coleção Exclusiva de Colares</h2>
+            <p>
+              Descubra a nossa seleção de Colares, criados com os materiais mais
+              nobres e um design inigualável. Cada peça conta uma história de
+              sofisticação e beleza.
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <footer style="padding-bottom: 2rem;">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <h2>AURUM.</h2>
-                    <p>Celebramos a beleza feminina através de design intemporal e artesanato de excelência.</p>
-                </div>
+    <footer style="padding-bottom: 2rem">
+      <!-- Footer institucional com links úteis e newsletter -->
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <h2>AURUM.</h2>
+            <p>
+              Celebramos a beleza feminina através de design intemporal e
+              artesanato de excelência.
+            </p>
+          </div>
 
-                <div class="footer-col">
-                    <h4>Navegação</h4>
-                    <ul>
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="categorias.html">Categorias</a></li>
-                        <li><a href="faq.html">Sobre Nós</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
+          <div class="footer-col">
+            <h4>Navegação</h4>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="categorias.html">Categorias</a></li>
+              <li><a href="faq.html">Sobre Nós</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
 
-                <div class="footer-col">
-                    <h4>Apoio ao Cliente</h4>
-                    <ul>
-                        <li><a href="faq.html">Perguntas Frequentes</a></li>
-                        <li><a href="envios.html">Envios e Devoluções</a></li>
-                        <li><a href="termos.html">Termos e Condições</a></li>
-                        <li><a href="privacidade.html">Política de Privacidade</a></li>
-                    </ul>
-                </div>
+          <div class="footer-col">
+            <h4>Apoio ao Cliente</h4>
+            <ul>
+              <li><a href="faq.html">Perguntas Frequentes</a></li>
+              <li><a href="envios.html">Envios e Devoluções</a></li>
+              <li><a href="termos.html">Termos e Condições</a></li>
+              <li><a href="privacidade.html">Política de Privacidade</a></li>
+            </ul>
+          </div>
 
-                <div class="footer-col">
-                    <h4>Newsletter</h4>
-                    <form class="newsletter-form" action="#">
-                        <input type="email" placeholder="Email" class="newsletter-input" required>
-                        <button class="newsletter-btn">OK</button>
-                    </form>
-                </div>
-            </div>
-
-            <div style="border-top: 1px solid #E6D2BF; padding-top: 2rem; text-align: center; font-size: 0.8rem; opacity: 0.8;">
-                &copy; 2026 AURUM Joalharia. Todos os direitos reservados.
-            </div>
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <form class="newsletter-form" action="#">
+              <!-- action="#" porque é um protótipo sem backend -->
+              <input
+                type="email"
+                placeholder="Email"
+                class="newsletter-input"
+                required
+              />
+              <!-- required obriga validação mínima do campo -->
+              <button class="newsletter-btn">OK</button>
+            </form>
+          </div>
         </div>
+
+        <div
+          style="
+            border-top: 1px solid #e6d2bf;
+            padding-top: 2rem;
+            text-align: center;
+            font-size: 0.8rem;
+            opacity: 0.8;
+          "
+        >
+          &copy; 2026 AURUM Joalharia. Todos os direitos reservados.
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
